@@ -25,7 +25,7 @@
 
   <main class="prose">
     <h1>Privacy Policy</h1>
-    <p class="meta">HabitBalance for iOS · Effective August 29, 2026</p>
+    <p class="meta">HabitBalance for iOS · Effective September 26, 2026</p>
 
     <div class="callout">
       <strong>The short version:</strong> HabitBalance has no accounts, no ads, and no analytics.
@@ -51,51 +51,69 @@
     <h2>3. The optional AI Assistant</h2>
     <p>HabitBalance includes an optional, subscription-gated AI feature (habit ideas and
     plain-language history summaries). It is off by default and does nothing until you
-    explicitly enable it. Before any data leaves your device, a dedicated consent screen names
-    the AI provider and lists exactly what will be sent.</p>
+    explicitly enable it. Before any data leaves your device, a dedicated permission screen
+    ("Share Your Data with Anthropic?") names the AI provider, lists exactly what will be sent,
+    and asks you to choose <strong>Allow Sharing with Anthropic</strong> or <strong>Don't
+    Allow</strong>. Nothing is sent unless you allow it.</p>
     <h3>What is sent, and when</h3>
     <ul>
       <li><strong>Only when you trigger a request</strong> (tapping an AI card or action) — never
       in the background, never on a schedule.</li>
-      <li><strong>Habit names and daily completion patterns</strong> — for history insights, also
-      your recent completion percentages. The app has no free-text notes feature, so notes can
-      never be part of what's sent.</li>
+      <li><strong>Your habit data:</strong> habit names; each habit's daily done/not-done pattern
+      for the last 28 days; any notes you have written on a habit; each measurable habit's goal
+      (target value, unit, and at-least/at-most direction); and each habit's schedule. For
+      history insights, also today's completion percentage and your 28-day average.</li>
       <li><strong>An anonymous, randomly generated identifier</strong> used only to enforce a
       daily request limit and prevent abuse. It is not a login, has no password, and is never
       linked to your name, email, or any real-world identity.</li>
     </ul>
+    <h3>How it is collected and used</h3>
+    <p>The app assembles this data on your device at the moment you tap an AI action and sends it
+    once, over an encrypted (TLS) connection. It is used for one purpose only: generating the
+    habit suggestion or history summary you asked for, which is returned to your device. It is
+    never used for advertising, profiling, or tracking, and never sold.</p>
     <h3>Who processes it</h3>
     <p>Requests go to our own backend (Google Firebase), which forwards them to Anthropic's
     Claude to generate the response. On success, nothing is stored server-side — no logs and no
     profiles. If a request fails, the server logs only minimal metadata (the anonymous
     identifier, which feature was called, and the error) — never the content of your request or
     its response.</p>
+    <p><strong>Third party: Anthropic, PBC.</strong> Anthropic processes these requests on our
+    behalf under its commercial API terms, which do not permit it to use the data to train its
+    models. Anthropic provides protection for this data equal to or greater than the protections
+    described in this policy. Google (Firebase) hosts our backend under its Cloud data-processing
+    terms, with the same standard.</p>
     <p>You can turn the AI Assistant off at any time in Settings; the rest of the app is fully
     functional without it and works completely offline.</p>
 
-    <h2>4. Purchases</h2>
+    <h2>4. Feedback form</h2>
+    <p>If you use the optional Send Feedback form in Settings, the text you type plus the app and
+    iOS version are posted as an issue in our own GitHub repository. Nothing else is attached, and
+    nothing is sent unless you submit the form.</p>
+
+    <h2>5. Purchases</h2>
     <p>In-app purchases (the one-time Pro unlock and the AI Assistant subscription) are processed
     entirely by Apple through the App Store. We never receive your payment method, billing
     address, or any financial information; the app only reads your entitlement state from
     Apple's StoreKit framework.</p>
 
-    <h2>5. Backups</h2>
+    <h2>6. Backups</h2>
     <p>Backup export and import are local file operations that you initiate. Exported files are
     saved where you choose (Files app or share sheet) and are under your control. Importing a
-    password-protected backup from the Android version of HabitBalance is decrypted on your
+    password-protected HabitBalance backup file is decrypted on your
     device with the password you provide; the file and password are never sent anywhere.</p>
 
-    <h2>6. Children</h2>
+    <h2>7. Children</h2>
     <p>HabitBalance is not directed at children, and because the app collects no personal data by
     default, no personal data is collected from anyone, including children.</p>
 
-    <h2>7. Changes to this policy</h2>
-    <p>If HabitBalance's data practices ever change — for example, when the optional AI Assistant
-    becomes available or its behavior changes — this policy and the app's App Store privacy
+    <h2>8. Changes to this policy</h2>
+    <p>If HabitBalance's data practices ever change — for example, if the optional AI Assistant's
+    behavior changes — this policy and the app's App Store privacy
     label will be updated at the same time. The effective date at the top always reflects the
     latest revision.</p>
 
-    <h2>8. Contact</h2>
+    <h2>9. Contact</h2>
     <p>Questions about this policy or your data? Reach us via the <a href="support.html">support
     page</a>.</p>
   </main>
